@@ -11,7 +11,8 @@
       "suspicionOfIlluminatiMembership": 0.6,
       "role": "Black Queen",
       "salientDetails": "Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014.",
-      "imgURL": ""
+      "imgURL": "https://img.buzzfeed.com/buzzfeed-static/static/2015-09/4/15/campaign_images/webdr11/badass-beyonce-quotes-that-will-inspire-you-to-li-2-11422-1441393624-1_dblbig.jpg",
+      "imgAlt": "Beyoncé looking regal af"
     },
     {
       "firstName": "Shawn",
@@ -24,7 +25,8 @@
       "suspicionOfIlluminatiMembership": 0.55,
       "role": "Treasurer",
       "salientDetails": "Loving husband of Beyonce and money magnet. Jay Z's talent for entrepreneurship did not go unnoticed by the Organization. He was inducted as a member in 2008, and has been the treasurer for nearly his whole tenure.",
-      "imgURL": ""
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahfb9VegDmOUZ-WelfsnaupxnTuyAiW57x95HyqA335fkajLLsQ",
+      "imgAlt": "Jay Z has a new problem. He better call Becky with the Good Hair"
     },
     {
       "firstName": "Hillary",
@@ -37,7 +39,8 @@
       "suspicionOfIlluminatiMembership": 0.72,
       "role": "White Queen",
       "salientDetails": "A master of public deception, Hillary collaborated with Vladmir Putin",
-      "imgURL": ""
+      "imgURL": "http://rs157.pbsrc.com/albums/t59/yark64/Funny/hillary-clinton-total-recall.jpg~c200",
+      "imgAlt": "Hillary during a ritual Illuminati vampire sacrifice"
     },
     {
       "firstName": "Becky",
@@ -50,7 +53,8 @@
       "suspicionOfIlluminatiMembership": 0.01,
       "role": "General Member",
       "salientDetails": "Frequent lover of both Jay Z and Beyoncé. Exerts most of her influence behind the scenes.",
-      "imgURL": ""
+      "imgURL": "http://xonecole.com/wp-content/uploads/2016/04/Screen-Shot-2016-04-29-at-10.05.18-AM.png",
+      "imgAlt": "Becky doesn't like actual pictures of herself on the internet"
     },
     {
       "firstName": "Vladimir",
@@ -63,20 +67,26 @@
       "suspicionOfIlluminatiMembership": 0.12,
       "role": "White King",
       "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton.",
-      "imgURL": ""
+      "imgURL": "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2015/12/man_file_1063574_meet-the-pr-firm-that-helped-vladimir-putin-troll-the-entire-country.jpg",
+      "imgAlt": "vlad winking"
     },
     {
       "firstName": "Elon",
       "lastName": "Musk",
       "illuminatiNickname": "The Muskiteer",
       "sectorOfInfluence": "technology",
-      "numberOfTwitterFollowers": 0,
-      "netWorth": 40000000000,
-      "politicalImpactQuotient": 0.93,
-      "suspicionOfIlluminatiMembership": 0.12,
-      "role": "White King",
-      "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton.",
-      "imgURL": ""
+      "numberOfTwitterFollowers": 8630000,
+      "netWorth": 15500000000,
+      "politicalImpactQuotient": 0.34,
+      "suspicionOfIlluminatiMembership": 0.42,
+      "role": "Black King",
+      "salientDetails": "The Muskiteer crashed onto the tech scene, and the Illuminati immediately snatched up this dynamo of a human being. We hope that he will be instrumental in setting up our Martian headquarters before the End Of Days here on Earth.",
+      "imgURL": "http://i.dailymail.co.uk/i/pix/2012/05/24/article-2149507-13473779000005DC-262_634x587.jpg",
+      "imgAlt": "Elon doing secret illuminati gesture"
     }
-  ]
+  ],
+  "admin":{
+    "username": "Administrator",
+    "password": "illuminati12345"
+  }
 }
