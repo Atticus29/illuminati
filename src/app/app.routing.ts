@@ -1,7 +1,8 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MembersDisplayComponent } from './members-display/members-display.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { MemberDetailsComponent } from './member-details/member-details.component'
 
 
 const appRoutes: Routes = [
