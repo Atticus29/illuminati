@@ -5,6 +5,6 @@ export class Member {
   public influenceQuotient: number;
 
   constructor(public firstName: string, public lastName: string, public illuminatiNickname: string, public sectorOfInfluence: string, public numberOfTwitterFollowers: number, public netWorth: number, public politicalImpactQuotient: number, public suspicionOfIlluminatiMembership: number, public role: string, salientDetails: string, imgURL: string, imgAlt: string) {
-    this.influenceQuotient = numberOfTwitterFollowers/TWITTERPOPULATION + netWorth/TOTALWORLDWEALTH + politicalImpactQuotient - suspicionOfIlluminatiMembership;
+    this.influenceQuotient = numberOfTwitterFollowers/this.TWITTERPOPULATION + netWorth/this.TOTALWORLDWEALTH + politicalImpactQuotient - suspicionOfIlluminatiMembership;
   }
 }

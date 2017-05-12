@@ -1,13 +1,17 @@
-<div class="row">
+<div class="row" *ngFor="let member of members | async">
    <div class="col s12 m6">
      <div class="card">
        <div class="card-image">
-         <img src="images/sample-1.jpg">
-         <span class="card-title">Card Title</span>
-         <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+         <img src={{member.imgURL}} alt={{member.imgAlt}}>
+         <span class="card-title">{{member.lastName}}, {{member.firstName}}</span>
+         <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">Details</i></a>
        </div>
        <div class="card-content">
-         <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+         <h3>Illuminati Name: {{member.illuminatiNickname}}</h3>
+         <h3>Sector of influence: {{member.sectorOfInfluence}}</h3>
+         <h3>Role: {{member.role}}</h3>
+         <h3>Influence quotient: {{member.influenceQuotient}}</h3>
+         <p>{{member.salientDetails}}</p>
        </div>
      </div>
    </div>
