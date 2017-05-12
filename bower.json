@@ -1,0 +1,21 @@
+{
+  "name": "illuminati",
+  "description": "A site for Illuminati members to coordinate their efforts and meet other members",
+  "main": "",
+  "authors": [
+    "Mark Fisher"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2"
+  }
+}
