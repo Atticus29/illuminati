@@ -1,0 +1,82 @@
+{
+  "members": [
+    {
+      "firstName": "Beyonce",
+      "lastName": "Knowles",
+      "illuminatiNickname": "Queen B",
+      "sectorOfInfluence": "culture",
+      "numberOfTwitterFollowers": 14800000,
+      "netWorth": 290000000,
+      "politicalImpactQuotient": 0.1,
+      "suspicionOfIlluminatiMembership": 0.6,
+      "role": "Black Queen",
+      "salientDetails": "Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014.",
+      "imgURL": ""
+    },
+    {
+      "firstName": "Shawn",
+      "lastName": "Cater",
+      "illuminatiNickname": "Jay Z",
+      "sectorOfInfluence": "culture",
+      "numberOfTwitterFollowers": 3230000,
+      "netWorth": 810000000,
+      "politicalImpactQuotient": 0.1,
+      "suspicionOfIlluminatiMembership": 0.55,
+      "role": "Treasurer",
+      "salientDetails": "Loving husband of Beyonce and money magnet. Jay Z's talent for entrepreneurship did not go unnoticed by the Organization. He was inducted as a member in 2008, and has been the treasurer for nearly his whole tenure.",
+      "imgURL": ""
+    },
+    {
+      "firstName": "Hillary",
+      "lastName": "Clinton",
+      "illuminatiNickname": "Nasty Woman",
+      "sectorOfInfluence": "politics",
+      "numberOfTwitterFollowers": 14600000,
+      "netWorth": 31300000,
+      "politicalImpactQuotient": 0.87,
+      "suspicionOfIlluminatiMembership": 0.72,
+      "role": "White Queen",
+      "salientDetails": "A master of public deception, Hillary collaborated with Vladmir Putin",
+      "imgURL": ""
+    },
+    {
+      "firstName": "Becky",
+      "lastName": "With the Good Hair",
+      "illuminatiNickname": "Porcelain Temptress",
+      "sectorOfInfluence": "culture",
+      "numberOfTwitterFollowers": 0,
+      "netWorth": 21000000,
+      "politicalImpactQuotient": 0.8,
+      "suspicionOfIlluminatiMembership": 0.01,
+      "role": "General Member",
+      "salientDetails": "Frequent lover of both Jay Z and Beyoncé. Exerts most of her influence behind the scenes.",
+      "imgURL": ""
+    },
+    {
+      "firstName": "Vladimir",
+      "lastName": "Putin",
+      "illuminatiNickname": "The Russian Doll",
+      "sectorOfInfluence": "politics",
+      "numberOfTwitterFollowers": 0,
+      "netWorth": 40000000000,
+      "politicalImpactQuotient": 0.93,
+      "suspicionOfIlluminatiMembership": 0.12,
+      "role": "White King",
+      "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton.",
+      "imgURL": ""
+    },
+    {
+      "firstName": "Elon",
+      "lastName": "Musk",
+      "illuminatiNickname": "The Muskiteer",
+      "sectorOfInfluence": "technology",
+      "numberOfTwitterFollowers": 0,
+      "netWorth": 40000000000,
+      "politicalImpactQuotient": 0.93,
+      "suspicionOfIlluminatiMembership": 0.12,
+      "role": "White King",
+      "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton.",
+      "imgURL": ""
+    }
+  ]
+}

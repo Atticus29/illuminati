@@ -8,6 +8,8 @@ import { MembersDisplayComponent } from './members-display/members-display.compo
 import { MemberDetailsComponent } from './member-details/member-details.component';
 import { AboutComponent } from './about/about.component';
 import { FilterPipe } from './filter.pipe';
+import { AddMemberComponent } from './add-member/add-member.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FilterPipe } from './filter.pipe';
     MembersDisplayComponent,
     MemberDetailsComponent,
     AboutComponent,
-    FilterPipe
+    FilterPipe,
+    AddMemberComponent,
+    EditMemberComponent
   ],
   imports: [
     BrowserModule,

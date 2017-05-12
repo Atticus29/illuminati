@@ -52,6 +52,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 ## Known Bugs/Future and Bonus functionality
 
 ### Future Functionality
+- [ ] Add timestamp to firebase entries
 - [ ] Add functionality to keep track of stats, if relevant. Is your roster for a sports club? Keep track of the individual players' scoring percentage. - [ ] An extracurricular course or seminar? Keep track of attendance or grades. A hiking group? Keep track of the number of miles each person has hiked with the club, etc.
 - [ ] Add a message board area, where club members may chat with each other.
 - [ ] Include an area called "announcements", "events", "games", etc. where users can post what events, matches, or meetings the club has planned.
@@ -103,7 +104,7 @@ THE SOFTWARE.
       - [ ] First name (string)
       - [ ] Last name (string)
       - [ ] Illuminati nickname (string)
-      - [ ] Sector of influence (string)
+      - [ ] Sector of influence (string) (technology, politics, media, culture, commerce)
       - [ ] Number of twitter followers (number)
       - [ ] Net worth (number)
       - [ ] Political impact quotient (number)
