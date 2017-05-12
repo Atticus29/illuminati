@@ -21,5 +21,4 @@ export class MembersDisplayComponent implements OnInit {
   goToDetailPage(member){
     this.router.navigate(['member', member.$key])
   }
-
 }

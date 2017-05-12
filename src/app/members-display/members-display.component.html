@@ -1,7 +1,7 @@
 <div class="row">
   <div  *ngFor="let member of members | async">
      <div class="col s6 m4">
-       <div class="card">
+       <div class="card small">
          <div class="card-image small">
            <img src={{member.imgURL}} alt={{member.imgAlt}}>
            <span class="card-title">{{member.lastName}}, {{member.firstName}}</span>
@@ -24,30 +24,6 @@
               <p>{{member.sectorOfInfluence}}</p>
             </div>
           </div>
-          <div class="row">
-             <div class="col s12 m6">
-               <h6>Role:</h6>
-             </div>
-             <div class="col s12 m6">
-               <p>{{member.role}}</p>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col s12 m6">
-               <h6>Influence quotient:</h6>
-             </div>
-             <div class="col s12 m6">
-               <p>{{member.influenceQuotient}}</p>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col s12 m6">
-               <h6>Salient Details:</h6>
-             </div>
-             <div class="col s12 m6">
-               <p>{{member.salientDetails}}</p>
-             </div>
-           </div>
          </div>
        </div>
      </div>

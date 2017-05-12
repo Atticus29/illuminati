@@ -2,48 +2,38 @@
   <ul class="menu horizontal black">
     <!-- <li class="heading active"><a href="#">Home</a></li> -->
     <li class="heading">
+      <a (click)="toggleLoginDisplay()">Admin Login</a>
+    </li>
+    <li class="heading">
       <a routerLink='about'>About</a>
     </li>
     <li>
       <a routerLink='members'>Members</a>
-
-      <!-- <a href="#">Filter Options</a>
-      <ul class="submenu dropdown">
-        <li>
-          <a (click)="applyFilter('', '')">All</a>
-        </li>
-        <li>
-          <a (click)="applyFilter('young', '')">Young</a>
-        </li>
-        <li>
-          <a (click)="applyFilter('mature', null)">Mature</a>
-        </li>
-        <li class="submenu">
-          <a href="#">Species</a>
-            <ul class="dropdown">
-              <div *ngFor="let currentSpecies of getUniqueSpecies(masterAnimalArray)">
-                <li>
-                  <a (click)="applyFilter('species', currentSpecies)">
-                    {{currentSpecies}}
-                  </a>
-                </li>
-              </div>
-            </ul>
-        </li>
-        <li class="submenu">
-          <a href="#">Diet</a>
-            <ul class="dropdown">
-              <div *ngFor="let currentDiets of getUniqueDiets(masterAnimalArray)">
-                <li>
-                  <a (click)="applyFilter('diet', currentDiets)">
-                    {{currentDiets}}
-                  </a>
-                </li>
-              </div>
-            </ul>
-        </li>
-      </ul> -->
+    </li>
+    <li>
+      <a *ngIf="adminStatus" routerLink='admin'><span class="fa fa-plus"></span>Induct Member</a>
     </li>
   </ul>
 </nav>
+
+<div class="row" *ngIf="loginDisplay">
+  <div class="col s4">
+  </div>
+   <form class="col s4 card" #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+     <div class="row">
+       <div class="input-field col s6">
+         <label for="username"><i class="fa fa-user-circle"></i>Username</label><br>
+         <input id="username" type="text" class="validate" placeholder=null>
+       </div>
+       <div class="input-field col s6">
+         <label for="password"><i class="fa fa-lock"></i> Password</label><br>
+         <input id="password" type="text" class="validate" placeholder=null>
+       </div>
+       <button type="submit" class="waves-effect waves-light btn" [disabled]="!formData.valid">Log in</button>
+     </div>
+   </form>
+   <div class="col s4">
+   </div>
+ </div>
+
 <router-outlet></router-outlet>

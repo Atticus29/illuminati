@@ -12,6 +12,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class MemberDetailsComponent implements OnInit {
   member;
+  adminStatus = true; // TODO pass this
   memberId: string;
   constructor(private route: ActivatedRoute, public memberService: MemberService) { }
 
@@ -20,6 +21,17 @@ export class MemberDetailsComponent implements OnInit {
      this.memberId = urlParameters['id'];
    });
    this.member = this.memberService.getMemberById(this.memberId);
+  }
+
+  calculateInfluenceQuotient(){
+    let twitterPopulation: number = 328000000;
+    let totalWorldWeath: number = 60000000000;
+    let influenceQuotient: number;
+    this.memberService.getMemberById(this.memberId).subscribe(results=>{
+      influenceQuotient = results.numberOfTwitterFollowers/twitterPopulation + results.netWorth/totalWorldWeath + results.politicalImpactQuotient - results.suspicionOfIlluminatiMembership;
+    });
+    console.log(influenceQuotient);
+    return influenceQuotient;
   }
 
 }
