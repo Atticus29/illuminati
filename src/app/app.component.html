@@ -1,3 +1,44 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="ink-navigation">
+  <ul class="menu horizontal black">
+    <!-- <li class="heading active"><a href="#">Home</a></li> -->
+    <li class="heading">
+      <a href="#">Filter Options</a>
+      <ul class="submenu dropdown">
+        <li>
+          <a (click)="applyFilter('', '')">All</a>
+        </li>
+        <li>
+          <a (click)="applyFilter('young', '')">Young</a>
+        </li>
+        <li>
+          <a (click)="applyFilter('mature', null)">Mature</a>
+        </li>
+        <li class="submenu">
+          <a href="#">Species</a>
+            <ul class="dropdown">
+              <div *ngFor="let currentSpecies of getUniqueSpecies(masterAnimalArray)">
+                <li>
+                  <a (click)="applyFilter('species', currentSpecies)">
+                    {{currentSpecies}}
+                  </a>
+                </li>
+              </div>
+            </ul>
+        </li>
+        <li class="submenu">
+          <a href="#">Diet</a>
+            <ul class="dropdown">
+              <div *ngFor="let currentDiets of getUniqueDiets(masterAnimalArray)">
+                <li>
+                  <a (click)="applyFilter('diet', currentDiets)">
+                    {{currentDiets}}
+                  </a>
+                </li>
+              </div>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="heading"><a (click)="displayNewForm()">Add New Animal <span class="fa fa-plus"></span> </a></li>
+  </ul>
+</nav>

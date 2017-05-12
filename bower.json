@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "materialize": "^0.98.2"
+    "materialize": "^0.98.2",
+    "Ink": "^3.1.10"
   }
 }

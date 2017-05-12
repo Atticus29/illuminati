@@ -52,18 +52,12 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 ## Known Bugs/Future and Bonus functionality
 
 ### Future Functionality
-- [x] Extend the functionality of the app by building out the animal model to further enhance the app.
-- [ ] Add custom SASS styling with corresponding Gulp tasks to compile.
-- [ ] Display of the total number of caretakers needed in a day.
-- [x] Add a property that records when each animal was admitted. The user could enter a date and time, or the app can generate a timestamp.
-- [x] Expand the application to differentiate between animals' species. Group the animals into those categories. Then include a component to display the total needed caretakers for whichever species the user selects.
-- [ ] Add a new master component to average the total age for each species.
-- [x] Show animals based on diet type. Then, show all animals who eat meat (carnivores AND omnivores)
-- [ ] *deploy on firebase*
-- [ ] *set up database in firebase*
-- [ ] *optimize accessibility*
-- [ ] *DRY up*
-- [ ] *Form validation for new animals*
+- [ ] Add functionality to keep track of stats, if relevant. Is your roster for a sports club? Keep track of the individual players' scoring percentage. - [ ] An extracurricular course or seminar? Keep track of attendance or grades. A hiking group? Keep track of the number of miles each person has hiked with the club, etc.
+- [ ] Add a message board area, where club members may chat with each other.
+- [ ] Include an area called "announcements", "events", "games", etc. where users can post what events, matches, or meetings the club has planned.
+- [ ] Deploy your application. Include a link to the live site in your project's README.
+- [ ] Consider implementing AngularFire/Firebase user authentication (Note that this goes beyond the scope of our curriculum, and will require you to complete outside research. Begin with the AngularFire documentation on User Authentication.)
+Anything else that would be relevant to the group your application manages!
 
 # License
 

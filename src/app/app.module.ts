@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MembersDisplayComponent } from './members-display/members-display.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
 import { AboutComponent } from './about/about.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MembersDisplayComponent,
     MemberDetailsComponent,
-    AboutComponent
+    AboutComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

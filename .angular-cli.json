@@ -19,7 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../bower_components/Ink/dist/css/ink-ie.css",
+        "../bower_components/Ink/dist/css/ink.css",
+        "../bower_components/font-awesome/css/font-awesome.min.css",
+        "../bower_components/materialize/dist/css/materialize.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
