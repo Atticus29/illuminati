@@ -5,7 +5,7 @@
          <div class="card-image small">
            <img src={{member.imgURL}} alt={{member.imgAlt}}>
            <span class="card-title">{{member.lastName}}, {{member.firstName}}</span>
-           <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-info"></i></a>
+           <a class="btn-floating halfway-fab waves-effect waves-light red" (click)="goToDetailPage(member)"><i class="fa fa-info"></i></a>
          </div>
          <div class="card-content">
            <div class="row">
