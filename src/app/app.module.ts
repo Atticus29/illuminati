@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MembersDisplayComponent } from './members-display/members-display.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MembersDisplayComponent,
-    MemberDetailsComponent
+    MemberDetailsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
