@@ -2,9 +2,9 @@
      <div class="col s6 m4">
        <div class="card">
          <div class="card-image small">
-           <img src={{member.imgURL}} alt={{member.imgAlt}}>
+           <img src="{{(memberToDisplay | async)?.imgURL}}" alt="{{(memberToDisplay | async)?.imgAlt}}">
            <span class="card-title">
-             {{member.lastName}}, {{member.firstName}}
+             {{(memberToDisplay | async)?.lastName}}, {{(memberToDisplay | async)?.firstName}}
              <a *ngIf="adminStatus"><i class="fa fa-edit"></i></a>
            </span>
          </div>
@@ -14,7 +14,7 @@
                <h6>Illuminati Name:</h6>
              </div>
              <div class="col s12 m6">
-               <p>{{member.illuminatiNickname}}</p>
+               <p>{{(memberToDisplay | async)?.illuminatiNickname}}</p>
              </div>
            </div>
            <div class="row">
@@ -22,7 +22,7 @@
               <h6>Sector of influence:</h6>
             </div>
             <div class="col s12 m6">
-              <p>{{member.sectorOfInfluence}}</p>
+              <p>{{(memberToDisplay | async)?.sectorOfInfluence}}</p>
             </div>
           </div>
           <div class="row">
@@ -30,7 +30,7 @@
                <h6>Role:</h6>
              </div>
              <div class="col s12 m6">
-               <p>{{member.role}}</p>
+               <p>{{(memberToDisplay | async)?.role}}</p>
              </div>
            </div>
            <div class="row">
@@ -38,7 +38,7 @@
                <h6>Influence quotient:</h6>
              </div>
              <div class="col s12 m6">
-               <a (click)="calculateInfluenceQuotient()">Test</a>
+               <!-- <a (click)="calculateInfluenceQuotient()">Test</a> -->
              </div>
            </div>
            <div class="row">
@@ -46,7 +46,7 @@
                <h6>Salient Details:</h6>
              </div>
              <div class="col s12 m6">
-               <p>{{member.salientDetails}}</p>
+               <p>{{(memberToDisplay | async)?.salientDetails}}</p>
              </div>
            </div>
          </div>

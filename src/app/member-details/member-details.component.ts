@@ -11,16 +11,19 @@ import { ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./member-details.component.css']
 })
 export class MemberDetailsComponent implements OnInit {
-  member;
+  memberToDisplay;
   adminStatus = true; // TODO pass this
   memberId: string;
   constructor(private route: ActivatedRoute, public memberService: MemberService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.memberId = urlParameters['id'];
+      // console.log(urlParameters);
+     this.memberId = urlParameters['memberId'];
    });
-   this.member = this.memberService.getMemberById(this.memberId);
+  //  console.log("memberId is: " + this.memberId);
+   this.memberToDisplay = this.memberService.getMemberById(this.memberId);
+   console.log(this.memberToDisplay);
   }
 
   calculateInfluenceQuotient(){
