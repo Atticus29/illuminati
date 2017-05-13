@@ -11,7 +11,11 @@ export class AppComponent {
   loginDisplay = false;
 
   toggleLoginDisplay(){
-    this.loginDisplay = true;
+    if(this.loginDisplay){
+      this.loginDisplay = false;
+    } else{
+      this.loginDisplay = true;
+    }
   }
 
   onSubmit(formData){

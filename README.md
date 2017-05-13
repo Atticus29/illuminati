@@ -32,7 +32,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 ## User stories
 - [x] As a user, I'd like to visit a page to see a list of all team or club members.
-- [ ] As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
+- [x] As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
 - [x] As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.
 - [x] As a user, I'd like all data persisted in a database, so it's always there when I need it.
 - [ ] As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something other than role, if it's more relevant to your project.)
@@ -100,23 +100,25 @@ THE SOFTWARE.
 - [ ] Required functionality was in place by the Friday deadline.
 
 ### Model(s)
-  - [ ] Model: member
-      - [ ] First name (string)
-      - [ ] Last name (string)
-      - [ ] Illuminati nickname (string)
-      - [ ] Sector of influence (string) (technology, politics, media, culture, commerce)
-      - [ ] Number of twitter followers (number)
-      - [ ] Net worth (number)
-      - [ ] Political impact quotient (number)
-      - [ ] Suspicion that you're a member of the Illuminati quotient (number)
+  - [x] Model: member
+      - [x] First name (string)
+      - [x] Last name (string)
+      - [x] Illuminati nickname (string)
+      - [x] Sector of influence (string) (technology, politics, media, culture, commerce)
+      - [x] Number of twitter followers (number)
+      - [x] Net worth (number)
+      - [x] Political impact quotient (number)
+      - [x] Suspicion that you're a member of the Illuminati quotient (number)
       - [ ] Influence quotient (number) = twitter followers/twitter population + net worth/sum world wealth + political impact quotient - Suspicion that you're a member of the Illuminati quotient
-      - [ ] Role in the organization (string: Black King, Black Queen, White Queen, White King, General Member, Treasurer, Secretary/Archivist)
+      - [x] Role in the organization (string: Black King, Black Queen, White Queen, White King, General Member, Treasurer, Secretary/Archivist)
 
 ### Components
 
-- [ ] **about**: I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
-- [ ] **members-display**:As a user, I'd like to visit a page to see a list of all team or club members.
-- [ ] **member-details**: As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
+- [x] **about**: I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
+- [x] **members-display**:As a user, I'd like to visit a page to see a list of all team or club members.
+- [x] **member-details**: As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
+- [x] **add-member**: As an administrator, I want to add new users to the club. (User authentication is not required).
+- [x] **edit-member**: As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.
 
 
 ### Pipes
