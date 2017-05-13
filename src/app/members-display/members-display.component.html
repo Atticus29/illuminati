@@ -1,22 +1,44 @@
+<script type="text/javascript">
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown({ hover: false } );
+});
+</script>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a (click)="changeFilterStrings('role',)">Filter by role</a></li>
+        <li class="tab"><a (click)="changeFilterStrings('sector',)">Filter by sector of influence</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div class="row">
-  <div  *ngFor="let member of members | async">
-     <div class="col s6 m4">
-       <div class="card small">
-         <div class="card-image small">
-           <img src={{member.imgURL}} alt={{member.imgAlt}}>
-           <span class="card-title">{{member.lastName}}, {{member.firstName}}</span>
-           <a class="btn-floating halfway-fab waves-effect waves-light red" (click)="goToDetailPage(member)"><i class="fa fa-info"></i></a>
-         </div>
-         <div class="card-content">
-           <div class="row">
-             <div class="col s12 m6">
-               <h6>Illuminati Name:</h6>
-             </div>
-             <div class="col s12 m6">
-               <p>{{member.illuminatiNickname}}</p>
-             </div>
-           </div>
-           <div class="row">
+  <div  *ngFor="let member of members | async| filter: byString:identityString">
+    <div class="col s6 m4">
+      <div class="card small">
+        <div class="card-image small">
+          <img src={{member.imgURL}} alt={{member.imgAlt}}>
+          <span class="card-title">{{member.lastName}}, {{member.firstName}}</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red" (click)="goToDetailPage(member)"><i class="fa fa-info"></i></a>
+        </div>
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m6">
+              <h6>Illuminati Name:</h6>
+            </div>
+            <div class="col s12 m6">
+              <p>{{member.illuminatiNickname}}</p>
+            </div>
+          </div>
+          <div class="row">
             <div class="col s12 m6">
               <h6>Sector of influence:</h6>
             </div>
@@ -24,8 +46,8 @@
               <p>{{member.sectorOfInfluence}}</p>
             </div>
           </div>
-         </div>
-       </div>
-     </div>
-   </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class MembersDisplayComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  byString: string;
+  identityString: string;
 
   constructor(public router: Router, public memberService: MemberService) { }
 
@@ -21,4 +23,31 @@ export class MembersDisplayComponent implements OnInit {
   goToDetailPage(member){
     this.router.navigate(['member', member.$key])
   }
+
+  changeFilterStrings(usrByString: string, usrIdentityString: string){
+    this.byString = usrByString;
+    this.identityString = usrIdentityString;
+  }
+
+  getUniqueRoles(members: Member[]){
+    var flags = [], output = [], l = members.length, i;
+    for( i=0; i<l; i++) {
+      if( flags[members[i].role]) continue;
+      flags[members[i].role] = true;
+      output.push(members[i].role);
+    }
+    return output;
+  }
+
+  getUniqueSectorsOfInfluence(members: Member[]){
+    var flags = [], output = [], l = members.length, i;
+    for( i=0; i<l; i++) {
+      if( flags[members[i].sectorOfInfluence]) continue;
+      flags[members[i].sectorOfInfluence] = true;
+      output.push(members[i].sectorOfInfluence);
+    }
+    return output;
+  }
+
+
 }

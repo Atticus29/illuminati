@@ -15,7 +15,7 @@ export class FilterPipe implements PipeTransform {
       });
     } else if (by ==="sector"){
       output = input.filter(member=>{
-        return member.sectorOfInfluence;
+        return member.sectorOfInfluence===identity;
       });
     } else{
       return input;

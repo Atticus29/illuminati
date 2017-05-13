@@ -18,90 +18,81 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <label for="illuminatiNickname">Name Given by Illuminati</label>
+            <div class="control">
+              <input id="illuminatiNickname" name="illuminatiNickname" type="text" placeholder="e.g., Russian Doll" #illuminatiNickname>
+            </div>
+          </div>
+          <div class="col s6 m6 input-field">
+            <label for="sectorOfInfluence">Sector of Influence</label>
+            <div class="control-group">
+              <ul class="control unstyled">
+                <li *ngFor="let option of selectOptions">
+                  <input type="radio" value="{{option.val}}"><label>{{option.name}}</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s3 m3">
+            <label for="numberOfTwitterFollowers">Number of Twitter Followers</label>
+            <div class="control">
+              <input id="numberOfTwitterFollowers" name="numberOfTwitterFollowers" type="number" placeholder="E.g., 200100000" #numberOfTwitterFollowers>
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <label for="netWorth">Net Worth:</label>
+            <div class="control">
+              <input id="netWorth" name="netWorth" type="number" placeholder="E.g., 4000000000" #netWorth>
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <label for="politicalImpactQuotient">Political Impact Quotient (0-1):</label>
+            <div class="control">
+              <input id="politicalImpactQuotient" name="politicalImpactQuotient" type="number" placeholder="E.g., 4000000000" #politicalImpactQuotient min="0" max="1">
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <label for="suspicionOfIlluminatiMembership">Suspicion of Illuminati Membership (0-1):</label>
+            <div class="control">
+              <input id="suspicionOfIlluminatiMembership" name="suspicionOfIlluminatiMembership" type="number" placeholder="E.g., 4000000000" #suspicionOfIlluminatiMembership min="0" max="1">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <label for="role">Role in the organization:</label>
+          <div class="control">
+            <input id="role" name="role" type="text" placeholder="this will become a dropdown menu" #role>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <label for="salientDetails">Salient Details:</label>
+          <div class="control">
+            <input id="salientDetails" name="salientDetails" type="text" placeholder="E.g., Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014." #salientDetails>
+          </div>
+        </div>
         <div class="col s6 m6">
-          <label for="illuminatiNickname">Name Given by Illuminati</label>
+          <label for="imgURL">Image URL:</label>
           <div class="control">
-            <input id="illuminatiNickname" name="illuminatiNickname" type="text" placeholder="e.g., Russian Doll" #illuminatiNickname>
+            <input id="imgURL" name="imgURL" type="URL" placeholder="E.g., https://img.buzzfeed.com/buzzfeed-static/static/2015-09/4/15/campaign_images/webdr11/badass-beyonce-quotes-that-will-inspire-you-to-li-2-11422-1441393624-1_dblbig.jpg" #imgURL>
           </div>
         </div>
-        <div class="col s6 m6 input-field">
-          <label for="sectorOfInfluence">Sector of Influence</label>
-          <select #sectorOfInfluence class="control">
-            <option name="sectorOfInfluence" [value]="Technology">
-              <p>Technology</p>
-            </option>
-            <option name="sectorOfInfluence" [value]="Politics">
-              <p>Politics</p>
-            </option>
-            <option name="sectorOfInfluence" [value]="Media">
-              <p>Media</p>
-            </option>
-            <option name="sectorOfInfluence" [value]="Culture">
-              <p>Culture</p>
-            </option>
-            <option name="sectorOfInfluence"
-            [value]="Commerce">
-            <p>Commerce</p>
-          </option>
-        </select>
-      </div>
-      <div class="row">
-        <div class="col s3 m3">
-          <label for="numberOfTwitterFollowers">Number of Twitter Followers</label>
+        <div class="col s6 m6">
+          <label for="imgAlt">Image Alternate Text:</label>
           <div class="control">
-            <input id="numberOfTwitterFollowers" name="numberOfTwitterFollowers" type="number" placeholder="E.g., 200100000" #numberOfTwitterFollowers>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <label for="netWorth">Net Worth:</label>
-          <div class="control">
-            <input id="netWorth" name="netWorth" type="number" placeholder="E.g., 4000000000" #netWorth>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <label for="politicalImpactQuotient">Political Impact Quotient (0-1):</label>
-          <div class="control">
-            <input id="politicalImpactQuotient" name="politicalImpactQuotient" type="number" placeholder="E.g., 4000000000" #politicalImpactQuotient min="0" max="1">
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <label for="suspicionOfIlluminatiMembership">Suspicion of Illuminati Membership (0-1):</label>
-          <div class="control">
-            <input id="suspicionOfIlluminatiMembership" name="suspicionOfIlluminatiMembership" type="number" placeholder="E.g., 4000000000" #suspicionOfIlluminatiMembership min="0" max="1">
+            <input id="imgAlt" name="imgAlt" type="text" placeholder="E.g., Queen B" #imgAlt>
           </div>
         </div>
       </div>
       <div class="col s12 m12">
-        <label for="role">Role in the organization:</label>
-        <div class="control">
-          <input id="role" name="role" type="text" placeholder="this will become a dropdown menu" #role>
-        </div>
+        <button type="submit" class="waves-effect waves-light btn"><i class="fa fa-plus"></i>Add</button>
       </div>
-      <div class="col s12 m12">
-        <label for="salientDetails">Salient Details:</label>
-        <div class="control">
-          <input id="salientDetails" name="salientDetails" type="text" placeholder="E.g., Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014." #salientDetails>
-        </div>
-      </div>
-      <div class="col s6 m6">
-        <label for="imgURL">Image URL:</label>
-        <div class="control">
-          <input id="imgURL" name="imgURL" type="URL" placeholder="E.g., https://img.buzzfeed.com/buzzfeed-static/static/2015-09/4/15/campaign_images/webdr11/badass-beyonce-quotes-that-will-inspire-you-to-li-2-11422-1441393624-1_dblbig.jpg" #imgURL>
-        </div>
-      </div>
-      <div class="col s6 m6">
-        <label for="imgAlt">Image Alternate Text:</label>
-        <div class="control">
-          <input id="imgAlt" name="imgAlt" type="text" placeholder="E.g., Queen B" #imgAlt>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m12">
-      <button type="submit" class="waves-effect waves-light btn"><i class="fa fa-plus"></i>Add</button>
-    </div>
-  </form>
+    </form>
 
-</div>
-<div class="col s1 m1">
-</div>
+  </div>
+  <div class="col s1 m1">
+  </div>
 </div>
