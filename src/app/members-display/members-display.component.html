@@ -1,8 +1,15 @@
 <script type="text/javascript">
 $( document ).ready(function(){
-  $(".dropdown-button").dropdown({ hover: false } );
+  $(".dropdown-button").dropdown();
 });
 </script>
+<ul id="dropdown1" class="dropdown-content">
+  <li *ngFor="let role of getUniqueRoles(members)"><a (click)="changeFilterStrings('role',role)">{{role}}</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+  <li *ngFor="let sector of getUniqueSectorsOfInfluence(members)"><a (click)="changeFilterStrings('role',sector)">{{sector}}</a></li>
+</ul>
+
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">one</a></li>
   <li><a href="#!">two</a></li>
@@ -11,12 +18,13 @@ $( document ).ready(function(){
 </ul>
 <nav>
   <div class="nav-wrapper">
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a (click)="changeFilterStrings('role',)">Filter by role</a></li>
-        <li class="tab"><a (click)="changeFilterStrings('sector',)">Filter by sector of influence</a></li>
-      </ul>
-    </div>
+    <a href="#!" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
   </div>
 </nav>
 

@@ -27,12 +27,8 @@
           </div>
           <div class="col s6 m6 input-field">
             <label for="sectorOfInfluence">Sector of Influence</label>
-            <div class="control-group">
-              <ul class="control unstyled">
-                <li *ngFor="let option of selectOptions">
-                  <input type="radio" value="{{option.val}}"><label>{{option.name}}</label>
-                </li>
-              </ul>
+            <div class="control">
+              <input id="sectorOfInfluence" name="sectorOfInfluence" type="text" placeholder="e.g., Technology" #sectorOfInfluence>
             </div>
           </div>
         </div>
@@ -65,13 +61,13 @@
         <div class="col s12 m12">
           <label for="role">Role in the organization:</label>
           <div class="control">
-            <input id="role" name="role" type="text" placeholder="this will become a dropdown menu" #role>
+            <input id="role" name="role" type="text" placeholder="Black King, Black Queen, White Queen, White King, General Member, Treasurer, Secretary/Archivist" #role>
           </div>
         </div>
         <div class="col s12 m12">
           <label for="salientDetails">Salient Details:</label>
           <div class="control">
-            <input id="salientDetails" name="salientDetails" type="text" placeholder="E.g., Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014." #salientDetails>
+            <textarea placeholder="E.g., Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014." #salientDetails>
           </div>
         </div>
         <div class="col s6 m6">
@@ -88,7 +84,7 @@
         </div>
       </div>
       <div class="col s12 m12">
-        <button type="submit" class="waves-effect waves-light btn"><i class="fa fa-plus"></i>Add</button>
+        <button (click)="submitForm(firstName.value, lastName.value, illuminatiNickname.value, sectorOfInfluence.value, numberOfTwitterFollowers.value, netWorth.value, politicalImpactQuotient.value, suspicionOfIlluminatiMembership.value, role.value, salientDetails.value, imgURL.value, imgAlt.value)" class="waves-effect waves-light btn"><i class="fa fa-plus"></i>Add</button>
       </div>
     </form>
 

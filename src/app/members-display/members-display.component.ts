@@ -48,6 +48,4 @@ export class MembersDisplayComponent implements OnInit {
     }
     return output;
   }
-
-
 }

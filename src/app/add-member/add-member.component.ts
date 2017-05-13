@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Member } from '../member.model';
+import { MemberService } from '../member.service';
 
 @Component({
   selector: 'app-add-member',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMemberComponent implements OnInit {
   selectOptions;
-  constructor() { }
+  constructor(private memberService: MemberService) { }
 
   ngOnInit() {
     this.selectOptions = [
@@ -15,6 +17,11 @@ export class AddMemberComponent implements OnInit {
       {val:2,name:"Option 2"},
       {val:3,name:"Option 3"}
     ]
+  }
+
+  submitForm(firstName: string, lastName: string, illuminatiNickname: string, sectorOfInfluence: string, numberOfTwitterFollowers: number, netWorth: number, politicalImpactQuotient: number, suspicionOfIlluminatiMembership: number, role: string, salientDetails: string, imgURL: string, imgAlt: string){
+    let newMember: Member = new Member(firstName, lastName, illuminatiNickname, sectorOfInfluence, numberOfTwitterFollowers, netWorth, politicalImpactQuotient, suspicionOfIlluminatiMembership, role, salientDetails, imgURL, imgAlt);
+    this.memberService.addMember(newMember);
   }
 
 }
