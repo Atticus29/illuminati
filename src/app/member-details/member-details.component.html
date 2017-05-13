@@ -5,7 +5,8 @@
            <img src="{{(memberToDisplay | async)?.imgURL}}" alt="{{(memberToDisplay | async)?.imgAlt}}">
            <span class="card-title">
              {{(memberToDisplay | async)?.lastName}}, {{(memberToDisplay | async)?.firstName}}
-             <a *ngIf="adminStatus"><i class="fa fa-edit"></i></a>
+             <a *ngIf="adminStatus" (click)="editMember(memberToDisplay)"><i class="fa fa-edit"></i></a>
+             <a *ngIf="adminStatus" (click)="deleteMember(memberToDisplay)"><i class="fa fa-delete"></i></a>
            </span>
          </div>
          <div class="card-content">

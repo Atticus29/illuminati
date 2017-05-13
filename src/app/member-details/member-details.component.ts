@@ -37,4 +37,10 @@ export class MemberDetailsComponent implements OnInit {
     return influenceQuotient;
   }
 
+  deleteMember(currentMember: Member){
+    if(confirm("Are you sure you want to excommunicate this member?")){
+      this.memberService.delete(currentMember);
+    }
+  }
+
 }
