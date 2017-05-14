@@ -4,7 +4,7 @@ export class Member {
   public TOTALWORLDWEALTH: number = 60000000000;
   public influenceQuotient: number;
 
-  constructor(public firstName: string, public lastName: string, public illuminatiNickname: string, public sectorOfInfluence: string, public numberOfTwitterFollowers: number, public netWorth: number, public politicalImpactQuotient: number, public suspicionOfIlluminatiMembership: number, public role: string, salientDetails: string, imgURL: string, imgAlt: string) {
+  constructor(public firstName: string, public lastName: string, public illuminatiNickname: string, public sectorOfInfluence: string, public numberOfTwitterFollowers: number, public netWorth: number, public politicalImpactQuotient: number, public suspicionOfIlluminatiMembership: number, public role: string, public salientDetails: string, public imgURL: string, public imgAlt: string) {
     this.influenceQuotient = numberOfTwitterFollowers/this.TWITTERPOPULATION + netWorth/this.TOTALWORLDWEALTH + politicalImpactQuotient - suspicionOfIlluminatiMembership;
   }
 }

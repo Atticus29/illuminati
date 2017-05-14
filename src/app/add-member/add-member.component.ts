@@ -42,6 +42,7 @@ export class AddMemberComponent implements OnInit {
   submitForm(){
     let {firstName, lastName, illuminatiNickname, sectorOfInfluence, numberOfTwitterFollowers, netWorth, politicalImpactQuotient, suspicionOfIlluminatiMembership, role, salientDetails, imgURL, imgAlt} = this.memberForm.value;
     let newMember = new Member(firstName, lastName, illuminatiNickname, sectorOfInfluence, numberOfTwitterFollowers, netWorth, politicalImpactQuotient, suspicionOfIlluminatiMembership, role, salientDetails, imgURL, imgAlt);
+    console.log(newMember);
     this.memberService.addMember(newMember);
     this.memberForm.reset();
   }

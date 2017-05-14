@@ -21,6 +21,8 @@
       "styles": [
         "styles.css",
         "../bower_components/font-awesome/css/font-awesome.min.css",
+        "../bower_components/Ink/dist/css/ink.css",
+        "../bower_components/Ink/dist/css/ink-ie.css",
         "../node_modules/materialize-css/dist/css/materialize.css"
       ],
       "scripts": [
