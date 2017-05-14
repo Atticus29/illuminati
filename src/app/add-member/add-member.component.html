@@ -10,6 +10,87 @@
             <input class="validate" type="text" placeholder="E.g., Perry" formControlName="firstName">
           </div>
         </div>
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="lastName">Last Name</label>
+            <input type="text" placeholder="E.g., Eising" class="validate" formControlName="lastName">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="illuminatiNickname">Name Given by Illuminati</label>
+            <input class="validate" type="text" placeholder="e.g., Russian Doll" formControlName="illuminatiNickname">
+          </div>
+        </div>
+        <div class="col s6 m6 input-field">
+          <div class="input-field">
+            <label for="sectorOfInfluence">Sector of Influence</label>
+            <input class="validate" type="text" placeholder="e.g., Technology" formControlName="sectorOfInfluence">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="numberOfTwitterFollowers">Number of Twitter Followers</label>
+            <input class="validate" type="number" placeholder="E.g., 200100000" formControlName="numberOfTwitterFollowers">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="netWorth">Net Worth:</label>
+            <input class="validate" type="number" placeholder="E.g., 4000000000" formControlName="netWorth">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="politicalImpactQuotient">Political Impact Quotient (0-1):</label>
+            <input class="validate" type="number" placeholder="E.g., 4000000000" min="0" max="1" formControlName="politicalImpactQuotient">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="suspicionOfIlluminatiMembership">Suspicion of Illuminati Membership (0-1):</label>
+            <input class="validate" type="number" placeholder="E.g., 4000000000" min="0" max="1" formControlName="suspicionOfIlluminatiMembership">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="input-field">
+            <label for="role">Role in the organization:</label>
+            <input class="validate" type="text" placeholder="Black King, Black Queen, White Queen, White King, General Member, Treasurer, Secretary/Archivist" formControlName="role">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="input-field">
+            <label for="salientDetails">Salient Details:</label>
+            <input placeholder="E.g., Although she doesn't do the best job hiding her membership, the Queen B is nonetheless the most influential member of the group. She was unanimously elected to be the group's Black Queen, a name more fitting for her than her predeccessors, in 2014." class="materialize-textarea" formControlName="salientDetails">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="imgURL">Image URL:</label>
+            <input class="validate" type="URL" placeholder="E.g., https://img.buzzfeed.com/buzzfeed-static/static/2015-09/4/15/campaign_images/webdr11/badass-beyonce-quotes-that-will-inspire-you-to-li-2-11422-1441393624-1_dblbig.jpg" #imgURL formControlName="imgURL">
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="imgAlt">Image Alternate Text:</label>
+            <input class="validate" type="text" placeholder="E.g., Queen B" #imgAlt formControlName="imgAlt">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <button (click)="submitForm()" class="waves-effect waves-light btn"><i class="fa fa-plus"></i>Add</button>
+        </div>
       </div>
     </form>
   </div>
