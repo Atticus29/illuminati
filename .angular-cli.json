@@ -20,11 +20,10 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../bower_components/font-awesome/css/font-awesome.min.css",
-        "../bower_components/materialize/dist/css/materialize.css"
+        "../bower_components/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [
-        "../bower_components/materialize/dist/js/materialize.js"
+        "../node_modules/materialize-css/dist/js/materialize.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
