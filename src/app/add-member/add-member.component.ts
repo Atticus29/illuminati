@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import {MaterializeAction} from 'angular2-materialize';
+import { MaterializeAction } from 'angular2-materialize';
 
 @Component({
   selector: 'app-add-member',
@@ -10,12 +10,12 @@ import {MaterializeAction} from 'angular2-materialize';
   styleUrls: ['./add-member.component.css']
 })
 export class AddMemberComponent implements OnInit {
-  sectorOfInfluenceOptions: any[] = [
-    {val:'Technology',name:"Technology"},
-    {val:'Politics',name:"Politics"},
-    {val:'Media',name:"Media"},
-    {val:'Commerce',name:"Commerce"},
-    {val:'Culture',name:"Culture"},
+  sectorOfInfluenceOptions: string[] = [
+    "Technology",
+    "Politics",
+    "Media",
+    "Commerce",
+    "Culture",
   ];
   memberForm: FormGroup;
 
