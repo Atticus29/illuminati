@@ -37,6 +37,7 @@ export const firebaseConfig = {
     FilterPipe,
     AddMemberComponent,
     EditMemberComponent,
+    // MaterializeModule
   ],
   imports: [
     BrowserModule,

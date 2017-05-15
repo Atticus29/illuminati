@@ -14,7 +14,7 @@ export class MemberDetailsComponent implements OnInit {
   memberToDisplay;
   adminStatus = true; // TODO pass this
   memberId: string;
-  constructor(private route: ActivatedRoute, public memberService: MemberService) { }
+  constructor(private route: ActivatedRoute, public memberService: MemberService, public router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -37,9 +37,13 @@ export class MemberDetailsComponent implements OnInit {
     return influenceQuotient;
   }
 
-  deleteMember(currentMember: Member){
+  deleteMember(currentMember){
     if(confirm("Are you sure you want to excommunicate this member?")){
-      this.memberService.delete(currentMember);
+      currentMember.subscribe(results=>{
+        this.memberService.delete(results);
+        this.router.navigate(['members']);
+
+      })
     }
   }
 

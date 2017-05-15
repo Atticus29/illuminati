@@ -8,7 +8,7 @@
            <span class="card-title">
              {{(memberToDisplay | async)?.lastName}}, {{(memberToDisplay | async)?.firstName}}
              <a *ngIf="adminStatus" (click)="editMember(memberToDisplay)"><i class="fa fa-edit"></i></a>
-             <a *ngIf="adminStatus" (click)="deleteMember(memberToDisplay)"><i class="fa fa-delete"></i></a>
+             <a *ngIf="adminStatus" (click)="deleteMember(memberToDisplay)"><i class="fa fa-trash"></i></a>
            </span>
          </div>
          <div class="card-content">
