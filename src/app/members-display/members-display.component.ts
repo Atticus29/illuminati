@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { Router } from '@angular/router';
+import { FilterPipe } from '../filter.pipe'
 
 @Component({
   selector: 'app-members-display',
@@ -11,8 +12,8 @@ import { Router } from '@angular/router';
 })
 export class MembersDisplayComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
-  byString: string;
-  identityString: string;
+  byString: string = '';
+  identityString: string = '';
 
   constructor(public router: Router, public memberService: MemberService) { }
 
@@ -27,6 +28,8 @@ export class MembersDisplayComponent implements OnInit {
   changeFilterStrings(usrByString: string, usrIdentityString: string){
     this.byString = usrByString;
     this.identityString = usrIdentityString;
+    // console.log(usrByString);
+    // console.log(usrIdentityString);
   }
 
   getUniqueRoles(members: Member[]){

@@ -9,10 +9,10 @@
         <li class="submenu">
           <a href="#">Role in the Organization</a>
             <ul class="dropdown">
-              <div *ngFor="let currentRole of getUniqueRoles(members)">
+              <div *ngFor="let currentMember of members|async">
                 <li>
-                  <a (click)="changeFilterStrings('role', currentRole)">
-                    {{currentRole}}
+                  <a (click)="changeFilterStrings('role', currentMember.role)">
+                    {{currentMember.role}}
                   </a>
                 </li>
               </div>

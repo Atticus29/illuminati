@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  parentByString: string;
+  parentIdentityString: string;
   title = 'app works!';
   adminStatus = true; // TODO edit this
   loginDisplay = false;
