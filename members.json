@@ -25,8 +25,8 @@
       "suspicionOfIlluminatiMembership": 0.55,
       "role": "Treasurer",
       "salientDetails": "Loving husband of Beyonce and money magnet. Jay Z's talent for entrepreneurship did not go unnoticed by the Organization. He was inducted as a member in 2008, and has been the treasurer for nearly his whole tenure.",
-      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahfb9VegDmOUZ-WelfsnaupxnTuyAiW57x95HyqA335fkajLLsQ",
-      "imgAlt": "Jay Z has a new problem. He better call Becky with the Good Hair"
+      "imgURL": "https://a3-images.myspacecdn.com/images03/35/a03b92e0338b4b229ae5e3cb379a2907/300x300.jpg",
+      "imgAlt": "Jay Z looking Ill...uminati"
     },
     {
       "firstName": "Hillary",
@@ -36,9 +36,9 @@
       "numberOfTwitterFollowers": 14600000,
       "netWorth": 31300000,
       "politicalImpactQuotient": 0.87,
-      "suspicionOfIlluminatiMembership": 0.72,
+      "suspicionOfIlluminatiMembership": 0.24,
       "role": "White Queen",
-      "salientDetails": "A master of public deception, Hillary collaborated with Vladmir Putin",
+      "salientDetails": "A master of public deception, Hillary collaborated with Vladmir Putin in an effort to install a controllable puppet into the White House while simultanously bringing the public's suspicion of her membership to an all-time low. She doesn't mind pulling the strings behind the Presidency; she's done it before.",
       "imgURL": "http://rs157.pbsrc.com/albums/t59/yark64/Funny/hillary-clinton-total-recall.jpg~c200",
       "imgAlt": "Hillary during a ritual Illuminati vampire sacrifice"
     },
@@ -66,7 +66,7 @@
       "politicalImpactQuotient": 0.93,
       "suspicionOfIlluminatiMembership": 0.12,
       "role": "White King",
-      "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton.",
+      "salientDetails": "Approaching absolute political control over the 'former' soviet bloc. Recently installed a puppet in the oval office of the United States in collaboration with Hillary Clinton. Judo black belt.",
       "imgURL": "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2015/12/man_file_1063574_meet-the-pr-firm-that-helped-vladimir-putin-troll-the-entire-country.jpg",
       "imgAlt": "vlad winking"
     },
@@ -86,6 +86,7 @@
     }
   ],
   "admin":{
+    "loginStatus": false,
     "username": "Administrator",
     "password": "illuminati12345"
   }

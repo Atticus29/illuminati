@@ -7,7 +7,7 @@
           <a (click)="changeFilterStrings('', '')">All</a>
         </li>
         <li class="submenu">
-          <a href="#">Role in the Organization</a>
+          <a href="#">Role</a>
             <ul class="dropdown">
               <div *ngFor="let currentMember of members|async">
                 <li>
@@ -21,13 +21,13 @@
         <li class="submenu">
           <a href="#">Sector of Influence</a>
             <ul class="dropdown">
-              <!-- <div *ngFor="let currentSector of getUniqueSectorsOfInfluence(members)">
+              <div *ngFor="let currentMember of members|async">
                 <li>
-                  <a (click)="changeFilterStrings('sector', currentSector)">
-                    {{currentSector}}
+                  <a (click)="changeFilterStrings('sector', currentMember.sectorOfInfluence)">
+                    {{currentMember.sectorOfInfluence}}
                   </a>
                 </li>
-              </div> -->
+              </div>
             </ul>
         </li>
       </ul>

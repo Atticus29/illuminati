@@ -8,14 +8,9 @@ import { Member} from './member.model'
 export class FilterPipe implements PipeTransform {
 
   transform(input: Member[], by: string, identity: string) {
-    // console.log(by);
-    // console.log(identity)
     var output: Member [];
     if(by==="role"){
       output = input.filter(member=>{
-        if(member.role===identity){
-          console.log(member.role);
-        }
         return member.role===identity;
       });
       return output;

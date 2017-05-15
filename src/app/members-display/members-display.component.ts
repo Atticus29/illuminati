@@ -3,7 +3,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { Router } from '@angular/router';
-import { FilterPipe } from '../filter.pipe'
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-members-display',
@@ -28,8 +28,6 @@ export class MembersDisplayComponent implements OnInit {
   changeFilterStrings(usrByString: string, usrIdentityString: string){
     this.byString = usrByString;
     this.identityString = usrIdentityString;
-    // console.log(usrByString);
-    // console.log(usrIdentityString);
   }
 
   getUniqueRoles(members: Member[]){
