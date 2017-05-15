@@ -26,4 +26,20 @@ export class MemberService {
       memberEntryInFirebase.remove();
   }
 
+  updateMember(localUpdatedMember){
+  var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+  memberEntryInFirebase.update({firstName: localUpdatedMember.firstName,
+                              lastName: localUpdatedMember.lastName,
+                              illuminatiNickname: localUpdatedMember.illuminatiNickname,
+                              sectorOfInfluence: localUpdatedMember.sectorOfInfluence,
+                              numberOfTwitterFollowers: localUpdatedMember.numberOfTwitterFollowers,
+                              netWorth: localUpdatedMember.netWorth,
+                              politicalImpactQuotient: localUpdatedMember.politicalImpactQuotient,
+                              suspicionOfIlluminatiMembership: localUpdatedMember.suspicionOfIlluminatiMembership,
+                              role: localUpdatedMember.role,
+                              salientDetails: localUpdatedMember.salientDetails,
+                              imgURL: localUpdatedMember.imgURL,
+                              imgAlt: localUpdatedMember.imgAlt});
+}
+
 }

@@ -14,14 +14,13 @@ export class MemberDetailsComponent implements OnInit {
   memberToDisplay;
   adminStatus = true; // TODO pass this
   memberId: string;
+  displayEdit: boolean = false;
   constructor(private route: ActivatedRoute, public memberService: MemberService, public router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      // console.log(urlParameters);
      this.memberId = urlParameters['memberId'];
    });
-  //  console.log("memberId is: " + this.memberId);
    this.memberToDisplay = this.memberService.getMemberById(this.memberId);
    console.log(this.memberToDisplay);
   }
@@ -45,6 +44,14 @@ export class MemberDetailsComponent implements OnInit {
 
       })
     }
+  }
+
+  editMember(member){
+    this.displayEdit = true;
+  }
+
+  updateEditStatus(member){
+    this.displayEdit = false;
   }
 
 }

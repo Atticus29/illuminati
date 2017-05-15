@@ -1,3 +1,100 @@
-<p>
-  edit-member works!
-</p>
+<h1>{{(childMemberToDisplay | async)?. firsName}}</h1>
+<div class="row">
+  <div class="col s1 m1">
+  </div>
+  <div class="col s10 m10">
+    <form>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="firstName">First Name</label><br>
+            <input [(ngModel)]="childMemberToDisplay.firstName" name="firstName">
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="lastName">Last Name</label><br>
+            <input [(ngModel)]="childMemberToDisplay.lastName" class="validate" name="lastName">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="illuminatiNickname">Name Given by Illuminati</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.illuminatiNickname" name="illuminatiNickname">
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="sectorOfInfluence">Sector of Influence:</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.sectorOfInfluence" name="sectorOfInfluence">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="numberOfTwitterFollowers">Number of Twitter Followers</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.numberOfTwitterFollowers" name="numberOfTwitterFollowers">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="netWorth">Net Worth:</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.netWorth" name="netWorth">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="politicalImpactQuotient">Political Impact Quotient (0-1):</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.politicalImpactQuotient" name="politicalImpactQuotient">
+          </div>
+        </div>
+        <div class="col s3 m3">
+          <div class="input-field">
+            <label for="suspicionOfIlluminatiMembership">Suspicion of Illuminati Membership (0-1):</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.suspicionOfIlluminatiMembership" name="suspicionOfIlluminatiMembership">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="input-field">
+            <label for="role">Role in the organization:</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.role" name="role">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="input-field">
+            <label for="salientDetails">Salient Details:</label><br>
+            <input [(ngModel)]="childMemberToDisplay.salientDetails" class="materialize-textarea" name="salientDetails">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="imgURL">Image URL:</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.imgURL" name="imgURL">
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="input-field">
+            <label for="imgAlt">Image Alternate Text:</label><br>
+            <input class="validate" [(ngModel)]="childMemberToDisplay.imgAlt" name="imgAlt">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <button (click)="finishEditing(childMemberToDisplay)" class="waves-effect waves-light btn"><i class="fa fa-check"></i>Done</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col s1 m1">
+  </div>
+</div>
