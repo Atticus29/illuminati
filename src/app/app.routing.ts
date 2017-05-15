@@ -8,6 +8,10 @@ import { AddMemberComponent } from './add-member/add-member.component'
 
 const appRoutes: Routes = [
   {
+    path: '',
+    component: AboutComponent
+  },
+  {
     path: 'members',
     component: MembersDisplayComponent
   },
